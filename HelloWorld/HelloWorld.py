@@ -81,3 +81,34 @@
 age = 29
 print("I am "+str(age)+" years old boy")
 
+print("I am {0} Years old".format(age))
+print("There are {0} days in {1},{2},{3},{4},{5},{6},{7}".format(31,"January", "March", "May", "July", "August", "October", "December"))
+print("""January: {2}
+February: {0}
+Msrch: {2}
+April: {1}
+May: {2}
+June: {1}
+July: {2}
+August: {2}
+September: {1}
+October: {2}
+November: {1}
+December: {2}""".format(28, 30, 31))
+
+print("My age is %d %s, %d %s" % (29, "years", 9, "months"))
+# for i in range(1,10):
+#     print("No. %2d Square is %4d and the Cube is %4d"% (i, i ** 2, i ** 3))
+
+print("PI is approximately %12.50f" % (22/7))
+print("PI is approximately {0:12.50}" .format(22/7))
+
+
+for i in range(1, 12):
+    print("No. {0:2} square is {1:4} and cube is {2:4}" .format(i, i ** 2, i ** 3))
+
+for i in range(1, 12):
+        print("No. {0:2} square is {1:<4} and cube is {2:<4}" .format(i, i ** 2, i ** 3))
+
+
+
