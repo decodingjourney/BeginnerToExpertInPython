@@ -46,12 +46,22 @@
 #     print("You guessed it on first attempt")
 
 
-age = int(input("How old are you? "))
-# if (age >= 16) and (age <= 65):
-if 16 <= age <= 65:
-    print("Welcome to work and have a nice day at work")
+# age = int(input("How old are you? "))
+# # if (age >= 16) and (age <= 65):
+# if 16 <= age <= 65:
+#     print("Welcome to work and have a nice day at work")
 
 
+# Coding on 12-12-2018
+# Write a small program to enter the name and age
+name = input("Please enter your name ")
+age = int(input(" how old are you {0} " .format(name)))
+if age > 18 and age < 31:
+    print("welcome to the grand party")
+elif age <= 18:
+    print("I am sorry! you are allowed after {0} years " .format(18 - age))
+else:
+    print("You are too old to attend this party")
 
 
 
