@@ -31,10 +31,33 @@
 #     print("BJP lost in " +state)
 
 
-for i in range(2, 21):
-    for j in range(1, 11):
-        print("{0} * {1} = {2} " .format(i, j, i*j))
-    print("#############")
+# for i in range(2, 21):
+#     for j in range(1, 11):
+#         print("{0} * {1} = {2} " .format(i, j, i*j))
+#     print("#############")
+
+
+# quote = """
+# Alright, but apart from the Sanitation, the Medicine, Education, Wine,
+# Public Order, Irrigation, Roads, the Fresh-Water System,
+# and Public Health, what have the Romans ever done for us?
+# """
+#
+# # Use a for loop and an if statement to print just the capitals in the quote above.
+# # for i in range(len(quote)):
+# #     if quote[i] in "ASMEWPOIRFH":
+# #         print(quote[i], end='')
+#
+# sentence = ''
+# for char in quote:
+#     if char in 'ASMEWPOIRFH':
+#         sentence = sentence + char
+#
+# print("the sentence is " +sentence)
+
+for i in range(0,101):
+    if (i % 7) == 0:
+        print(i, end='')
 
 
 
