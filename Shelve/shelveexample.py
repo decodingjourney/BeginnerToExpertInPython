@@ -47,3 +47,18 @@ with shelve.open('ShelfTest') as fruit:
 # fruit.close()
 #
 # print(fruit)
+
+    # ordered_key = list(fruit.keys())
+    # ordered_key.sort()
+    #
+    # for f in ordered_key:
+    #     print(f+" : "+fruit[f])
+
+    for v in fruit.values():
+        print(v)
+    print(fruit.values())
+
+    for t in fruit.items():
+        print(t)
+
+    print(fruit.items())
