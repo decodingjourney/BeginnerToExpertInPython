@@ -12,7 +12,7 @@
 
 import time
 
-from time import time as my_timer
+from time import process_time as my_timer
 
 import random
 
