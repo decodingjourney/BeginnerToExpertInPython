@@ -59,3 +59,4 @@ if __name__ == '__main__':
     sonam.show_transaction()
     sonam.__balance = 50
     sonam.showBalance()
+    print(sonam.__dict__)
