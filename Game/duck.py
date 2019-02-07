@@ -1,4 +1,20 @@
+class Wing(object):
+
+    def __init__(self, ratio):
+        self.ratio = ratio
+
+    def fly(self):
+        if self.ratio > 1:
+            print("Weeee, it's really fun flying")
+        elif self.ratio == 1:
+            print("It's hard, But i can definitely fly")
+        else:
+            print("I thing i am fine walking")
+
 class Duck(object):
+
+    def __init__(self):
+        self._wing = Wing(1.8)
 
     def walk(self):
         print("Waddle, waddle, waddle")
@@ -8,6 +24,9 @@ class Duck(object):
 
     def quack(self):
         print("Quack quack")
+
+    def fly(self):
+        self._wing.fly()
 
 
 class Penguin(object):
@@ -22,15 +41,16 @@ class Penguin(object):
         print("Are you 'avin' a larf? I'm a penguin!")
 
 
-def test_duck(duck):
-    duck.walk()
-    duck.swim()
-    duck.quack()
+# def test_duck(duck):
+#     duck.walk()
+#     duck.swim()
+#     duck.quack()
 
 
 if __name__ == '__main__':
     donald = Duck()
-    test_duck(donald)
-
-    peng = Penguin()
-    test_duck(peng)
+    donald.fly()
+    # test_duck(donald)
+    #
+    # peng = Penguin()
+    # test_duck(peng)
