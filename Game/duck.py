@@ -29,6 +29,10 @@ class Duck(object):
         self._wing.fly()
 
 
+class Mallard(Duck):
+    pass
+
+
 class Penguin(object):
 
     def walk(self):
@@ -45,6 +49,26 @@ class Penguin(object):
 #     duck.walk()
 #     duck.swim()
 #     duck.quack()
+
+class Flock(object):
+
+    def __init__(self):
+        self.flock = []
+
+    def add_duck(self, duck: Duck) -> None:
+        if isinstance(duck, Duck):
+            self.flock.append(duck)
+
+    def migrate(self):
+        problem = None
+        for duck in self.flock:
+            try:
+                duck.fly()
+            except AttributeError as e:
+                print("One duck down")
+                problem = e
+        if problem:
+            raise problem
 
 
 if __name__ == '__main__':
